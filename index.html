@@ -10,19 +10,45 @@
 </head>
 
 <body>
-    <header class="flex justify-between items-center p-2 bg-[rgb(252,241,227)] border-b border-[rgb(192,150,105)]">
+    <header class="flex justify-between items-center bg-[rgb(252,241,227)] border-b border-[rgb(192,150,105)] relative">
         <div>
             <img class="w-30" src="./public/images/LOGO.PNG">
         </div>
-        <div class="flex gap-20 items-center pr-5">
-            <a class="hover:text-[rgb(209,87,44)] hover:border-b-2 border-[rgb(44,24,17)]" href="">Home</a>
-            <a class="hover:text-[rgb(209,87,44)] hover:border-b" href="">Evidence</a>
-            <a class="hover:text-[rgb(209,87,44)] hover:border-b" href="">Reporting</a>
+        <div class="flex gap-20 items-center">
+            <input class="hidden checked: max-sm:right-50" type="checkbox" id="menuChecked">
+            <nav class="flex gap-20 items-center pr-5 max-sm:flex-col relative max-sm:top-26.5 max-sm:hidden max-sm:gap-4 max-sm:bg-[rgb(252,241,227)] max-sm:border-[rgb(192,150,105)] max-sm:border max-sm:transition:0.5s">
+            <a class="hover:text-[rgb(209,87,44)] hover:border-b-2 border-[rgb(44,24,17)]" href="./index.html">Home</a>
+            <a class="hover:text-[rgb(209,87,44)] hover:border-b" href="./public/pages/Evidence.html">Evidence</a>
+            <a class="hover:text-[rgb(209,87,44)] hover:border-b" href="./public/pages/Report.html">Reporting</a>
+            </nav>
             <button
-                class="bg-[rgb(209,87,44)] py-2 px-4 rounded-2xl text-white cursor-pointer hover:bg-[rgb(44,24,17)] hover:text-[rgb(234,204,168)]">Find
+                class="bg-[rgb(209,87,44)] py-2 px-4 rounded-2xl text-white cursor-pointer hover:bg-[rgb(44,24,17)] hover:text-[rgb(234,204,168)] max-sm:hidden">Find
                 Support <i class="bi bi-arrow-right text-white"></i></button>
+            <label for="menuChecked">
+            <i class="bi bi-menu-button hidden max-sm:block"></i>
+            </label>
         </div>
     </header>
+    <main class="">
+        <section class="flex px-10 py-10 bg-[rgb(206,92,50)] bg-[url(/public/images/bg-img.png)] bg-no-repeat ">
+            <div class="flex flex-col gap-5 w-[70vw] bg-[rgb(241,171,145)] relative left-85 top-10 py-5 px-8">
+                <p class="text-[rgb(209,44,91)] font-medium"><i class="bi bi-heart-arrow text-[rgb(209,44,91)]"></i>YOUR RIGHTS.
+                    YOUR VOICE. YOUR FUTURE.</p>
+                <h1 class="font-bold text-3xl text-[rgb(23,12,10)]">Violence Is a Crime, and
+                    Silence Protects the
+                    Abuser. Here Is How to
+                    Claim Your Rights.</h1>
+                <p class="text-gray-800">You deserve safety, dignity, and justice. Learn how to protect yourself,
+                    document what happened, and access the support you need. You are not
+                    alone.</p>
+                <div class="flex gap-2">
+                    <button class="bg-[rgb(209,44,91)] py-2 px-6 rounded-2xl text-white cursor-pointer hover:bg-[rgb(68,27,46)] hover:text-[rgb(234,168,198)]">Discover Your Rights</button>
+                    <button class="border border-[rgb(209,44,91)] py-2 px-6 rounded-2xl text-[rgb(68,27,46)] cursor-pointer hover:border-[rgb(68,27,46)] hover:text-[rgb(209,44,91)]">How to Get Help</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
 </body>
 
 </html>
