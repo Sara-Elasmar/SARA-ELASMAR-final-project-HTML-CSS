@@ -238,6 +238,9 @@
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
   }
+  .animate-bounce {
+    animation: var(--animate-bounce);
+  }
   .cursor-default {
     cursor: default;
   }
@@ -325,11 +328,20 @@
   .bg-\[rgb\(209\,44\,91\)\] {
     background-color: rgb(209,44,91);
   }
+  .bg-\[rgb\(209\,86\,44\)\] {
+    background-color: rgb(209,86,44);
+  }
   .bg-\[rgb\(209\,87\,44\)\] {
     background-color: rgb(209,87,44);
   }
   .bg-\[rgb\(240\,195\,186\)\] {
     background-color: rgb(240,195,186);
+  }
+  .bg-\[rgb\(241\,215\,181\)\] {
+    background-color: rgb(241,215,181);
+  }
+  .bg-\[rgb\(243\,207\,160\)\] {
+    background-color: rgb(243,207,160);
   }
   .bg-\[rgb\(252\,241\,227\)\] {
     background-color: rgb(252,241,227);
@@ -371,8 +383,20 @@
     --tw-gradient-from: rgb(240,195,186);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .from-\[rgb\(243\,207\,160\)\] {
+    --tw-gradient-from: rgb(243,207,160);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .from-\[rgb\(252\,241\,227\)\] {
     --tw-gradient-from: rgb(252,241,227);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[rgb\(243\,185\,160\)\] {
+    --tw-gradient-to: rgb(243,185,160);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[rgb\(243\,207\,160\)\] {
+    --tw-gradient-to: rgb(243,207,160);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-\[rgba\(205\,112\,111\,0\.86\)\] {
@@ -474,8 +498,14 @@
   .text-\[rgb\(209\,44\,91\)\] {
     color: rgb(209,44,91);
   }
+  .text-\[rgb\(209\,86\,44\)\] {
+    color: rgb(209,86,44);
+  }
   .text-\[rgb\(209\,87\,44\)\] {
     color: rgb(209,87,44);
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-gray-300 {
     color: var(--color-gray-300);
@@ -500,6 +530,10 @@
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-lg {
@@ -531,11 +565,30 @@
     transition-timing-function: var(--ease-in-out);
   }
   @media (hover: hover) {
+    .hover\:animate-\[bounce\]:hover {
+      animation: bounce;
+    }
+    .hover\:animate-\[bounce_ease-in-\]:hover {
+      animation: bounce ease-in-;
+    }
+    .hover\:animate-\[bounce_ease-in-out\]:hover {
+      animation: bounce ease-in-out;
+    }
+    .hover\:animate-\[bounce_ease-in-out_\]:hover {
+      animation: bounce ease-in-out ;
+    }
+    .hover\:animate-\[bounce_ease-in-out_infinite\]:hover {
+      animation: bounce ease-in-out infinite;
+    }
     .hover\:animate-\[spin_ease-in-out_infinite_1s\]:hover {
       animation: spin ease-in-out infinite 1s;
     }
     .hover\:animate-bounce:hover {
       animation: var(--animate-bounce);
+    }
+    .hover\:border:hover {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
     }
     .hover\:border-b:hover {
       border-bottom-style: var(--tw-border-style);
@@ -550,6 +603,9 @@
     }
     .hover\:border-\[rgb\(176\,37\,76\)\]:hover {
       border-color: rgb(176,37,76);
+    }
+    .hover\:border-\[rgb\(209\,86\,44\)\]:hover {
+      border-color: rgb(209,86,44);
     }
     .hover\:border-\[rgb\(209\,87\,44\)\]:hover {
       border-color: rgb(209,87,44);
@@ -583,6 +639,9 @@
     .hover\:text-\[rgb\(209\,44\,91\)\]:hover {
       color: rgb(209,44,91);
     }
+    .hover\:text-\[rgb\(209\,86\,44\)\]:hover {
+      color: rgb(209,86,44);
+    }
     .hover\:text-\[rgb\(209\,87\,44\)\]:hover {
       color: rgb(209,87,44);
     }
@@ -595,12 +654,32 @@
     .hover\:text-blue-300:hover {
       color: var(--color-blue-300);
     }
+    .hover\:shadow:hover {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
     .hover\:shadow-\[rgb\(139\,21\,5\)\]:hover {
       --tw-shadow-color: rgb(139,21,5);
     }
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:shadow-\[rgb\(139\,21\,5\)\]:hover {
         --tw-shadow-color: color-mix(in oklab, rgb(139,21,5) var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[rgb\(209\,44\,91\)\]:hover {
+      --tw-shadow-color: rgb(209,44,91);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[rgb\(209\,44\,91\)\]:hover {
+        --tw-shadow-color: color-mix(in oklab, rgb(209,44,91) var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[rgb\(209\,86\,44\)\]:hover {
+      --tw-shadow-color: rgb(209,86,44);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[rgb\(209\,86\,44\)\]:hover {
+        --tw-shadow-color: color-mix(in oklab, rgb(209,86,44) var(--tw-shadow-alpha), transparent);
       }
     }
     .hover\:shadow-\[rgb\(209\,87\,44\)\]:hover {
@@ -611,6 +690,9 @@
         --tw-shadow-color: color-mix(in oklab, rgb(209,87,44) var(--tw-shadow-alpha), transparent);
       }
     }
+  }
+  .active\:animate-bounce:active {
+    animation: var(--animate-bounce);
   }
   @media (width < 40rem) {
     .max-sm\:block {
