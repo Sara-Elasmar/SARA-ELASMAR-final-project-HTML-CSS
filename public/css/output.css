@@ -800,8 +800,17 @@
     .hover\:bg-\[rgb\(176\,37\,76\)\]:hover {
       background-color: rgb(176,37,76);
     }
+    .hover\:bg-\[rgb\(209\,86\,44\)\]:hover {
+      background-color: rgb(209,86,44);
+    }
     .hover\:bg-\[rgb\(236\,184\,167\)\]:hover {
       background-color: rgb(236,184,167);
+    }
+    .hover\:bg-\[rgb\(251\,233\,224\)\]:hover {
+      background-color: rgb(251,233,224);
+    }
+    .hover\:bg-\[rgb\(252\,241\,227\)\]:hover {
+      background-color: rgb(252,241,227);
     }
     .hover\:bg-linear-to-r:hover {
       --tw-gradient-position: to right;
@@ -868,6 +877,9 @@
     .hover\:text-\[rgb\(249\,77\,125\)\]:hover {
       color: rgb(249,77,125);
     }
+    .hover\:text-\[rgb\(252\,241\,227\)\]:hover {
+      color: rgb(252,241,227);
+    }
     .hover\:text-blue-300:hover {
       color: var(--color-blue-300);
     }
@@ -932,6 +944,22 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:shadow-\[rgb\(248\,236\,224\)\]:hover {
         --tw-shadow-color: color-mix(in oklab, rgb(248,236,224) var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[rgb\(251\,233\,224\)\]:hover {
+      --tw-shadow-color: rgb(251,233,224);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[rgb\(251\,233\,224\)\]:hover {
+        --tw-shadow-color: color-mix(in oklab, rgb(251,233,224) var(--tw-shadow-alpha), transparent);
+      }
+    }
+    .hover\:shadow-\[rgb\(252\,241\,227\)\]:hover {
+      --tw-shadow-color: rgb(252,241,227);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:shadow-\[rgb\(252\,241\,227\)\]:hover {
+        --tw-shadow-color: color-mix(in oklab, rgb(252,241,227) var(--tw-shadow-alpha), transparent);
       }
     }
   }
