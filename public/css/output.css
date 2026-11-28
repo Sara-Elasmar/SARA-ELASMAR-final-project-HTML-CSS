@@ -256,6 +256,9 @@
   .w-50 {
     width: calc(var(--spacing) * 50);
   }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
+  }
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
@@ -390,6 +393,9 @@
   .border-l-5 {
     border-left-style: var(--tw-border-style);
     border-left-width: 5px;
+  }
+  .border-\[\#2b1200\] {
+    border-color: #2b1200;
   }
   .border-\[rgb\(44\,24\,17\)\] {
     border-color: rgb(44,24,17);
