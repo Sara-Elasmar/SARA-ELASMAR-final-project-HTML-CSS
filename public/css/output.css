@@ -400,6 +400,9 @@
   .border-\[rgb\(57\,48\,90\)\] {
     border-color: rgb(57,48,90);
   }
+  .border-\[rgb\(58\,46\,89\)\] {
+    border-color: rgb(58,46,89);
+  }
   .border-\[rgb\(159\,217\,211\)\] {
     border-color: rgb(159,217,211);
   }
@@ -448,11 +451,17 @@
   .border-\[rgb\(255\,138\,18\)\] {
     border-color: rgb(255,138,18);
   }
+  .border-\[rgb\(255\,248\,239\)\] {
+    border-color: rgb(255,248,239);
+  }
   .border-black {
     border-color: var(--color-black);
   }
   .border-white {
     border-color: var(--color-white);
+  }
+  .bg-\[\[rgb\(255\,248\,239\)\]\] {
+    background-color: [rgb(255,248,239)];
   }
   .bg-\[rgb\(40\,18\,13\)\] {
     background-color: rgb(40,18,13);
@@ -863,6 +872,9 @@
   .text-\[rgb\(255\,138\,18\)\] {
     color: rgb(255,138,18);
   }
+  .text-\[rgb\(255\,248\,239\)\] {
+    color: rgb(255,248,239);
+  }
   .text-black {
     color: var(--color-black);
   }
@@ -1009,6 +1021,9 @@
     .hover\:border-\[rgb\(252\,133\,20\)\]:hover {
       border-color: rgb(252,133,20);
     }
+    .hover\:border-\[rgb\(255\,136\,17\)\]:hover {
+      border-color: rgb(255,136,17);
+    }
     .hover\:border-white:hover {
       border-color: var(--color-white);
     }
@@ -1044,6 +1059,12 @@
     }
     .hover\:bg-\[rgb\(252\,241\,227\)\]:hover {
       background-color: rgb(252,241,227);
+    }
+    .hover\:bg-\[rgb\(255\,136\,17\)\]:hover {
+      background-color: rgb(255,136,17);
+    }
+    .hover\:bg-\[rgb\(255\,248\,239\)\]:hover {
+      background-color: rgb(255,248,239);
     }
     .hover\:bg-black:hover {
       background-color: var(--color-black);
@@ -1088,6 +1109,9 @@
     }
     .hover\:text-\[rgb\(44\,24\,17\)\]:hover {
       color: rgb(44,24,17);
+    }
+    .hover\:text-\[rgb\(58\,46\,89\)\]:hover {
+      color: rgb(58,46,89);
     }
     .hover\:text-\[rgb\(92\,48\,42\)\]:hover {
       color: rgb(92,48,42);

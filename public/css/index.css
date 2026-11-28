@@ -1,5 +1,5 @@
 .third-section {
-    background: rgb(255, 254, 251);
+    background: rgb(255, 248, 240);
     padding: 2rem 2rem;
 
     .first-div {
@@ -14,7 +14,9 @@
             gap: 0.5rem;
 
             p {
-                color: rgb(165, 135, 125);
+                color: rgb(58, 46, 89);
+                font-size: large;
+                font-weight: bold;
             }
         }
 
@@ -25,9 +27,10 @@
     }
 
     .first-para {
-        background-color: rgb(253, 243, 241);
+        background-color: rgb(58, 46, 89);
+        color: white;
         padding: 1rem;
-        border: rgb(165, 135, 125) solid;
+        border: 1px rgb(255, 248, 239) solid;
         border-radius: 8px;
     }
 }
@@ -35,16 +38,19 @@
 .second-div {
     padding-top: 1rem;
     table {
-        border: 1px rgb(165, 135, 125) solid;
+        border: 1px rgb(58, 46, 89) solid;
         width: 100%;
         th, td{
             text-align: left;
-            border-bottom: 1px rgb(165, 135, 125) solid;
+            border-bottom: 1px rgb(159, 217, 211) solid;
         }
 
         th {
-            background-color: rgb(252, 241, 227);
+            background-color: rgb(58, 46, 89);
             padding: 1rem 2rem;
+            color: rgb(159, 217, 211);
+            font-weight: bold;
+            font-size: large;
         }
 
         td {
@@ -55,8 +61,10 @@
         padding-top: 1rem;
         text-align: center;
         button{
+            background-color: rgb(58, 46, 89);
+            color: rgb(159, 217, 211);
            border-radius: 8px;
-           border: 1px rgb(165, 135, 125) solid;
+           border: 1px rgb(159, 217, 211) solid;
            padding: 0.5rem 1rem;
         }
     }
